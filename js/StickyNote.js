@@ -95,6 +95,7 @@ function genDragon() {
     Dragon.style.backgroundRepeat = "no-repeat";
     Dragon.style.backgroundPosition = "center center";
     AncientDragon = ChosenDragon;
+    getNoise();
     PerchTheDragon();
 
 }
@@ -120,7 +121,7 @@ function dropDragon() {
 
     let y = dragon.offsetTop;
 
-    getNoise();
+
     noise.currentTime = 0;
     noise.playbackRate = dragonZoom / 20;
     noise.play();
